@@ -1,0 +1,215 @@
+/*
+ * wp-cat2calendar default style
+ * $Id: default.css 323661 2010-12-16 22:11:03Z andddd $
+ */
+
+/* reset */
+.wp_cat2calendar,
+.wp_cat2calendar table,
+.wp_cat2calendar th,
+.wp_cat2calendar td,
+.wp_cat2calendar div,
+.wp_cat2calendar span,
+.wp_cat2calendar ul,
+.wp_cat2calendar li,
+.wp-cat2calendar-popup,
+.wp-cat2calendar-popup ul,
+.wp-cat2calendar-popup div,
+.wp-cat2calendar-popup span,
+.wp-cat2calendar-popup li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+.wp_cat2calendar table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* / reset */
+
+/* nav */
+.nav .left {
+    float: left;
+	text-align: left;
+}
+
+.nav .right {
+    float: right;
+	text-align: right;
+}
+
+.nav .current_date {
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav {
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+}
+/* / nav */
+
+/* calendar */
+.wp_cat2calendar {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.wp_cat2calendar table {
+    border-collapse: collapse;
+	width: 100%;
+	/*table-layout: fixed;*/
+	empty-cells: show;
+    margin: 10px 0;
+    font-size: 20px;
+	border: 0 !important;
+}
+
+.wp_cat2calendar td, .wp_cat2calendar th {
+    width: 14%;
+    height: 81px;
+    text-align: center;
+    vertical-align: middle;
+    background: #b9c1ca url("img/cell-default.png") 0% 0% repeat-x;
+    color: #444 !important;
+	border: 1px solid #9dabce;
+	font-family: 'Lucida Grande', Verdana, Sans-serif;
+}
+
+.wp_cat2calendar th {
+    height: 30px;
+    font-weight: bold;
+    font-size: 14px !important;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+	background: transparent;
+}
+.wp_cat2calendar td:hover {
+    color: #222;
+	background-color: #bac2cb;
+	background-image: url("img/cell-default-hover.png");
+}
+.wp_cat2calendar td.has-posts {
+    background-image: url("img/cell-active.png");
+	background-color: #0273e2;
+    color: #fff;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.5);
+}
+.wp_cat2calendar td.has-posts:hover {
+    background-image: url("img/cell-active-hover.png");
+	background-color: #0056aa;
+}
+.wp_cat2calendar td.empty {
+}
+.wp_cat2calendar td.today
+{
+    background-image: url("img/cell-today.png");
+	background-color: #607ba1;
+    color: #fff !important;
+	text-shadow: 0 -1px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 10px #000;
+	-khtml-box-shadow: inset 0px 1px 10px #000;
+	-webkit-box-shadow: inset 0px 1px 10px #000;
+}
+.wp_cat2calendar td.today.has-posts {
+}
+.wp_cat2calendar td.today:hover {
+    background-image: url("img/cell-today-hover.png");
+	background-color: #6b88b5;
+}
+
+.wp_cat2calendar td.has-posts .posts {
+	display: none;
+}
+.wp-cat2calendar-popup {
+    text-align: left;
+    position: absolute;
+	display: block;
+    z-index: 1000;
+    padding: 10px;
+    background: #e7ecf2 url("img/popup.png") no-repeat;
+    color: #fff;
+    border: 1px solid white;
+    font-size: 15px;
+    width: 200px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    color: #444444;
+    -moz-box-shadow: 0px 2px 8px #333;
+    -khtml-box-shadow: 0px 2px 8px #333;
+    -webkit-box-shadow: 0px 2px 8px #333;
+	box-shadow: 0px 2px 8px #333;
+    margin: 0;
+}
+.wp-cat2calendar-popup ul {
+	margin: 0;
+	padding: 0;
+}
+
+.wp-cat2calendar-popup li {
+    margin: 0 0 5px 0;
+    padding: 0 0 0 5px;
+    list-style: none;
+    text-indent: 0;
+}
+/* for themes like kubrick */
+.wp-cat2calendar-popup li span {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+    color: #555;
+    line-height: 1.5em;
+}
+.wp-cat2calendar-popup li span.title {
+    font-weight: bold;
+    color: #222;
+}
+
+.wp-cat2calendar-popup li span.desc {
+}
+
+/* / calendar */
+
+/* clickable dates */
+.wp_cat2calendar td.has-posts a,
+.wp_cat2calendar td.today a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+/* / clickable dates */
+
+/* widget */
+
+.widget_cat2calendar .wp_cat2calendar table {
+	font-size: 14px !important;
+	margin: 0 1px;
+}
+
+.widget_cat2calendar .wp_cat2calendar td {
+	height: 30px;
+}
+
+.widget_cat2calendar .wp_cat2calendar th {
+	font-size: 10px !important;
+}
+
+.widget_cat2calendar .nav .left,
+.widget_cat2calendar .nav .right
+{
+    width: 50%;
+	white-space: nowrap;
+}
+
+/* / widget */

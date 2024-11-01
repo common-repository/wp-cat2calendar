@@ -1,0 +1,346 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP-Cat2Calendar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-26 22:34+0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Andrew Mikhaylov <me@codeispoetry.ru>\n"
+"Language-Team: Andrew Mikhaylov <and.mikhaylov@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+"X-Poedit-Country: RUSSIAN FEDERATION\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: F:\\dev\\Netbeans\\wp-cat2calendar\n"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:37
+msgid "WP-Cat2Calendar widget"
+msgstr "Виджет для WP-Cat2Calendar"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:41
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:54
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:63
+msgid "Calendar"
+msgstr "Календарь"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:46
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:639
+msgid "F, Y"
+msgstr "F Y"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:106
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:109
+msgid "Hide title"
+msgstr "Скрыть заголовок"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:113
+msgid "Category filter:"
+msgstr "Фильтр рубрик:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:114
+msgid "Category IDs, separated by commas."
+msgstr "ID рубрик разделенные запятой"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:118
+msgid "Author filter:"
+msgstr "Фильтр по авторам:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:119
+msgid "Author IDs, separated by commas."
+msgstr "ID авторов разделенные запятой"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:123
+msgid "Date:"
+msgstr "Дата:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:126
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:136
+msgid "Current"
+msgstr "Текущий"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:127
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:137
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:128
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:138
+msgid "Next"
+msgstr "Следующий"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:147
+msgid "Show navigation"
+msgstr "Показать навигацию"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:151
+msgid "Show date"
+msgstr "Показать дату"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:155
+msgid "Allow change date"
+msgstr "Разрешить переход по датам"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:156
+msgid "Useful when navigation is hidden but calendar month/year permalinks still should work. Obsolete when navigation is on."
+msgstr "Удобно в случае, если навигация скрыта, но ссылки на календарь все еще должни работать. Не используется, если навигация включена."
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:167
+msgid "Date format:"
+msgstr "Формат даты:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:169
+msgid "Navigation dates. <a href=\"http://php.net/date\" target=\"_blank\">PHP date format docs</a>."
+msgstr "Даты в навигации. <a href=\"http://php.net/date\" target=\"_blank\">Документация по формату дат в PHP</a>."
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:173
+msgid "Cell height:"
+msgstr "Высота ячейки:"
+
+#: F:\dev\Netbeans\wp-cat2calendar/widget.php:175
+msgid "Leave empty for default height."
+msgstr "Оставьте пустым для высоты по умолчанию"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:299
+msgid "WP-Cat2Calendar"
+msgstr "WP-Cat2Calendar"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:304
+#, fuzzy
+msgid ""
+"<p><h5>Usage</h5></p>\n"
+"\t<p>Use <tt>WP-Cat2Calendar</tt> shortcode in your post/page to add a calendar.</p>\n"
+"\n"
+"\t<p>You can add a calendar using the php lines:</p>\n"
+"\n"
+"\t<pre>$options = array(...);\n"
+"\techo wp_cat2calendar($options);</pre>\n"
+"\n"
+"\n"
+"\t<p><strong>Options:</strong></p>\n"
+"\n"
+"\t<ul>\n"
+"\t\t<li>cat_id – a comma separated list of category ID&#8217;s. (all categories by default)</li>\n"
+"\t\t<li>author_id – a comma separated list of author ID&#8217;s. (all authors by default)<br />\n"
+"\t\tYou also can use a special keyword <tt>post_author</tt> which will be replaced with a post author ID where shortcode is placed.<br />\n"
+"\t\t<em>WordPress bug (still in 2.8.5) at <a href=\"http://core.trac.wordpress.org/browser/tags/2.8.5/wp-includes/query.php#L1979\" target=\"_blank\">wp-includes/query.php</a> line 1979 in exclusion so you can exclude only one author, but you can include multiple.</em></li>\n"
+"\t\t<li>year – year you want to display in calendar (current year by default)</li>\n"
+"\t\t<li>month – month you want to display in calendar (current month by default)</li>\n"
+"\t\t<li>show_nav – show/hide month/year navigation, 0 or 1 (0 by default)</li>\n"
+"\t\t<li>show_date – show/hide selected month/year title, 0 or 1 (0 by default). <span style=\"text-decoration: underline;\">Have no affect if navigation is shown</span>.</li>\n"
+"\t\t<li>allow_change_date – allow user to navigate through a calendar even if navigation is hidden and user has direct link. <span style=\"text-decoration: underline;\">Has no affect if navigation is shown</span>.</li>\n"
+"\t</ul>\n"
+"\n"
+"\n"
+"\t<p><strong>Examples:</strong></p>\n"
+"\n"
+"\t<p><tt>[WP-Cat2Calendar cat_id=\"3,4\" show_nav=\"1\" year=\"2009\" month=\"10\"]</tt></p>\n"
+"\n"
+"\t<p>Show a calendar of posts for WordPress categories with ID 3 and 4 with navigation and the start date for a calendar will be October, 2009.</p>\n"
+"\n"
+"\t<p><tt>[WP-Cat2Calendar cat_id=\"1\" show_nav=\"1\"]</tt></p>\n"
+"\n"
+"\t<p>Show a calendar of posts for WordPress category ID 1 with navigation and the start date for a calendar will be current date.</p>\n"
+"\n"
+"\t<p><tt>[WP-Cat2Calendar author_id=\"1, 2, 3\" cat_id=\"-4,-5\"]</tt></p>\n"
+"\n"
+"\t<p>Show a calendar of posts posted by users with ID 1, 2, 3 for all WordPress categories excluding categories with ID 4 and 5.</p>\n"
+"\n"
+"\t<p><tt>[WP-Cat2Calendar author_id=\"-post_author\"]</tt></p>\n"
+"\n"
+"\t<p>Show a calendar of posts posted by any user except a posts which belongs to the author of post where shortcode is placed.</p>\n"
+"\n"
+"\t<p><tt>[WP-Cat2Calendar author_id=\"post_author\"]</tt></p>\n"
+"\n"
+"\t<p>Show a calendar of posts posted by the author of post where shortcode is placed.</p>"
+msgstr ""
+"<p><h5>Использование</h5></p>\n"
+"<p>Используйте <tt>WP-Cat2Calendar</tt> на страницах своих записей чтобы добавить календарь.</p>\n"
+"\n"
+"<p>Вы можете добавить календарь используя php код:</p>\n"
+"\n"
+"<pre>$options = array(...);\n"
+"echo wp_cat2calendar($options);</pre>\n"
+"\n"
+"\n"
+"<p><strong>Параметры:</strong></p>\n"
+"\n"
+"<ul>\n"
+"    <li>cat_id – список ID рубрик разделенный запятыми. (все рубрики по умолчанию)</li>\n"
+"    <li>author_id – список ID авторов разделенный запятыми. (все авторы  по умолчанию)<br />\n"
+"    Вы также можете использовать ключевое слово <tt>post_author</tt>, которое будет заменено на ID автора записи где расположен календарь.<br />\n"
+"    <em>WordPress баг (все еще в 2.8.5) в <a href=\"http://core.trac.wordpress.org/browser/tags/2.8.5/wp-includes/query.php#L1979\" target=\"_blank\">wp-includes/query.php</a> строка 1979 в исключении, который не позволяет исключить больше чем одного автора, но вы можете включить множество авторов.</em></li>\n"
+"    <li>year – год, который вы хотите отобразить в календаре (текущий год по умолчанию)</li>\n"
+"    <li>month – месяц, который вы хотите отобразить в календаре (текущий месяц по умолчанию)</li>\n"
+"    <li>show_nav – показать/скрыть навигацию по месяцам/годам, 0 или 1 (0 по умолчанию)</li>\n"
+"    <li>show_date – показать/скрыть заголовок с выбранным месяцем/годом, 0 или 1 (0 по умолчанию). <span style=\"text-decoration: underline;\">Не работает, если навигация отображается</span>.</li>\n"
+"    <li>allow_change_date – позволяет пользователю перемещаться по календарю, даже если навигация скрыта и у пользователя есть прямая ссылка. <span style=\"text-decoration: underline;\">Не работает, если навигация отображается</span>.</li>\n"
+"</ul>\n"
+"\n"
+"\n"
+"<p><strong>Примеры:</strong></p>\n"
+"\n"
+"<p><tt>[WP-Cat2Calendar cat_id=\"3,4\" show_nav=\"1\" year=\"2009\" month=\"10\"]</tt></p>\n"
+"\n"
+"<p>Показать календарь с записями для рубрик WordPress с ID 3 и 4, с навигацией и начальной датой календаря Октябрь 2009.</p>\n"
+"\n"
+"<p><tt>[WP-Cat2Calendar cat_id=\"1\" show_nav=\"1\"]</tt></p>\n"
+"\n"
+"<p>Показать календарь с записями для рубрик WordPress с ID = 1, с навигацией и начальной датой календаря будет текущая дата.</p>\n"
+"\n"
+"<p><tt>[WP-Cat2Calendar author_id=\"1, 2, 3\" cat_id=\"-4,-5\"]</tt></p>\n"
+"\n"
+"<p>Показать календарь с записями опубликованными пользователями с ID 1,2 и 3 для всех рубрик WordPress исключая рубрики с ID 4 и 5.</p>\n"
+"\n"
+"<p><tt>[WP-Cat2Calendar author_id=\"-post_author\"]</tt></p>\n"
+"\n"
+"<p>Показать календарь с записями опубликованными любыми пользователями за исключением автора, которому принадлежит запись где расположен календарь.</p>\n"
+"\n"
+"<p><tt>[WP-Cat2Calendar author_id=\"post_author\"]</tt></p>\n"
+"\n"
+"<p>Показать календарь записей опубликованных автором записи где расположен календарь.</p>"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:356
+msgid "Cheatin&#8217; uh?"
+msgstr "Cheatin&#8217; uh?"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:407
+msgid "Options updated."
+msgstr "Настройки обновлены."
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:419
+msgid "WP-Cat2Calendar Settings"
+msgstr "Настройки WP-Cat2Calendar"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:427
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:430
+msgid "Styles"
+msgstr "Стили"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:433
+msgid "Use default (bundled) CSS"
+msgstr "Использовать CSS по-умолчанию"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:439
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:442
+msgid "Pretty URLs support"
+msgstr "Поддержка красивых URL"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:451
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:454
+msgid "Show Future Posts"
+msgstr "Показывать запланированные записи"
+
+#: F:\dev\Netbeans\wp-cat2calendar/wp-cat2calendar.php:476
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#~ msgid "Use permalinks"
+#~ msgstr "Использовать постоянные ссылки"
+
+#, fuzzy
+#~ msgid ""
+#~ "URL will look like <tt>%1$s/my-post/%4$s/%2$d/%3$d</tt> instead of <tt>%1"
+#~ "$s/index.php?p=1&%4$s=%2$d-%3$d</tt>"
+#~ msgstr ""
+#~ "URL будет выглядеть как <tt>%1$s/my-post/%4$s/%2$d-%3$d</tt> вместо <tt>%1"
+#~ "$s/index.php?p=1&%4$s=%2$d-%3$d</tt>"
+#~ msgid ""
+#~ "<p><h5>Usage</h5></p>\n"
+#~ "<p>Use <tt>WP-Cat2Calendar</tt> shortcode in your post/page to add a "
+#~ "calendar.</p>\n"
+#~ "\n"
+#~ "<p>You can add a calendar using the php lines:</p>\n"
+#~ "\n"
+#~ "<pre>$options = array(...);\n"
+#~ "echo wp_cat2calendar($options);</pre>\n"
+#~ "\n"
+#~ "\n"
+#~ "<p><strong>Options:</strong></p>\n"
+#~ "\n"
+#~ "\n"
+#~ "<ul>\n"
+#~ "    <li>cat_id – a comma separated list of category ID's (uncategorized "
+#~ "by default)</li>\n"
+#~ "    <li>year – year you want to display in calendar (current year by "
+#~ "default)</li>\n"
+#~ "    <li>month – month you want to display in calendar (current month by "
+#~ "default)</li>\n"
+#~ "    <li>show_nav – show/hide month/year navigation, 0 or 1 (0 by default)"
+#~ "</li>\n"
+#~ "    <li>show_date – show/hide selected month/year title, 0 or 1 (0 by "
+#~ "default). <span style=\"text-decoration: underline;\">Have no affect if "
+#~ "navigation is shown</span>.</li>\n"
+#~ "    <li>allow_change_date – allow user to navigate through a calendar "
+#~ "even if navigation is hidden and user has direct link. <span style=\"text-"
+#~ "decoration: underline;\">Has no affect if navigation is shown</span>.</"
+#~ "li>\n"
+#~ "</ul>\n"
+#~ "\n"
+#~ "\n"
+#~ "<p><strong>Examples:</strong></p>\n"
+#~ "\n"
+#~ "<p><tt>[WP-Cat2Calendar cat_id=\"3,4\" show_nav=\"1\" year=\"2009\" month="
+#~ "\"10\"]</tt></p>\n"
+#~ "\n"
+#~ "<p>It will show a calendar of posts for WordPress categories with ID 3 "
+#~ "and 4 with navigation and the start date for a calendar will be October, "
+#~ "2009.</p>\n"
+#~ "\n"
+#~ "<p><tt>[WP-Cat2Calendar cat_id=\"1\" show_nav=\"1\"]</tt></p>\n"
+#~ "\n"
+#~ "<p>It will show a calendar of posts for WordPress category ID 1 with "
+#~ "navigation and the start date for a calendar will be current date.</p>"
+#~ msgstr ""
+#~ "<p><h5>Использование</h5></p>\n"
+#~ "<p>Используйте <tt>WP-Cat2Calendar</tt> шоткод чтобы вставить календарь в "
+#~ "страницу или запись.</p>\n"
+#~ "\n"
+#~ "<p>Вы также можете добавить календарь используя php-код:</p>\n"
+#~ "\n"
+#~ "<pre>$options = array(...);\n"
+#~ "echo wp_cat2calendar($options);</pre>\n"
+#~ "\n"
+#~ "\n"
+#~ "<p><strong>Опции:</strong></p>\n"
+#~ "\n"
+#~ "\n"
+#~ "<ul>\n"
+#~ "    <li>cat_id – список ID рубрик разделенных запятыми (по умолчанию без "
+#~ "рубрики)</li>\n"
+#~ "    <li>year – год, который вы хотите отображать в календаре (текущий год "
+#~ "по умолчанию)</li>\n"
+#~ "    <li>month – месяц, который вы хотите отображать в календаре (текущий "
+#~ "месяц по умолчанию)</li>\n"
+#~ "    <li>show_nav – показать/скрыть навигацию по месяцам/годам, 0 или 1 (0 "
+#~ "по умолчанию)</li>\n"
+#~ "    <li>show_date – показать/скрыть заголовок с выбранным месяцем/годом, "
+#~ "0 или 1 (0 по умолчанию). <span style=\"text-decoration: underline;\">Не "
+#~ "влияет в случае, если навигация отображается.</span>.</li>\n"
+#~ "    <li>allow_change_date – allow user to navigate through a calendar "
+#~ "even if navigation is hidden and user has direct link. <span style=\"text-"
+#~ "decoration: underline;\">Не влияет в случае, если навигация отображается."
+#~ "</span></li>\n"
+#~ "</ul>\n"
+#~ "\n"
+#~ "\n"
+#~ "<p><strong>Примеры:</strong></p>\n"
+#~ "\n"
+#~ "<p><tt>[WP-Cat2Calendar cat_id=\"3,4\" show_nav=\"1\" year=\"2009\" month="
+#~ "\"10\"]</tt></p>\n"
+#~ "\n"
+#~ "<p>Выведет календарь с записями для рубрик WordPress с ID 3 и 4 с "
+#~ "навигацией, начальная дата календаря будет октябрь 2009.</p>\n"
+#~ "\n"
+#~ "<p><tt>[WP-Cat2Calendar cat_id=\"1\" show_nav=\"1\"]</tt></p>\n"
+#~ "\n"
+#~ "<p>Выведет календарь записей WordPress рубрики с ID 1с навигацией, "
+#~ "начальная дата календаря будет являться текущей.</p>"
+#~ msgid "<p><strong>Usage</strong></p>"
+#~ msgstr "<p><strong>Использование</strong></p>"
+
